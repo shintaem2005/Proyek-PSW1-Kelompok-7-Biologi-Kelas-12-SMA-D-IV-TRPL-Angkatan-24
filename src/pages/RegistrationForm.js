@@ -1,4 +1,5 @@
 import React,{ useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 const RegistrationForm = () => {
 
@@ -9,6 +10,8 @@ const RegistrationForm = () => {
     email: '',
     password: ''
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,6 +28,8 @@ const RegistrationForm = () => {
       setError('All fields are required');
     }
     console.log('Registered:', formData);
+
+    navigate("/login")
   };
 
   return (
