@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styling.css';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar.js';
+import RegistrationForm from './pages/RegistrationForm.js';
+import LoginForm from './pages/LoginForm.js';
+import Homepage from './pages/Homepage.js';
+import Materi from './pages/Materi.js';
+// import Profile from './';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <h1>Welcome to BIOSCIENTIVE</h1>
+
+        <Routes>
+          <Route path='/register' element={<RegistrationForm/>} />
+
+          <Route path='/login' element={<LoginForm />} />
+
+          <Route path='/home' element={<Homepage />} />
+
+          <Route path='/materi' element={<Materi />} />
+
+          {/* <Route path='/profile' element ={<Profile />} /> */}
+
+          <Route path="/" element={<Navigate to="/register" replace />} />
+
+        </Routes>
+
+    </Router>
   );
 }
 
 export default App;
+
+
+
