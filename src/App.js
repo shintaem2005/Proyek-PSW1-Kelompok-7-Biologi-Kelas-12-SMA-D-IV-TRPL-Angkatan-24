@@ -6,7 +6,7 @@ import RegistrationForm from './pages/RegistrationForm.js';
 import LoginForm from './pages/LoginForm.js';
 import Homepage from './pages/Homepage.js';
 import Materi from './pages/Materi.js';
-// import Profile from './';
+import Profile from './pages/Profile.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
@@ -25,7 +25,7 @@ function App() {
 
           <Route path='/materi' element={<Materi />} />
 
-          {/* <Route path='/profile' element ={<Profile />} /> */}
+          <Route path='/profile' element ={<Profile />} /> 
 
           <Route path="/" element={<Navigate to="/register" replace />} />
 
@@ -36,6 +36,5 @@ function App() {
 }
 
 export default App;
-
 
 
