@@ -31,7 +31,7 @@ function Bioteknologi() {
             <section style={styles.videoSection}>
                 <h2>Video Tentang Bioteknologi</h2>
                 <video controls style={styles.video}>
-                    <source src="c:\Users\acer\Downloads\Video\Bioteknologi - IPA - SayaBisa.mp4" type="video/mp4" />
+                    <source src="https://youtu.be/z4f--YdNzAM" type="video/mp4" />
                     Browser Anda tidak mendukung elemen video.
                 </video>
             </section>
