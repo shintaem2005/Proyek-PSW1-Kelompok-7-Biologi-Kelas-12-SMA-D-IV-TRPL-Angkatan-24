@@ -6,6 +6,7 @@ import RegistrationForm from './pages/RegistrationForm.js';
 import LoginForm from './pages/LoginForm.js';
 import Homepage from './pages/Homepage.js';
 import Bioteknologi from './pages/Bioteknologi.js';
+import EnzymeMetabolism from './pages/EnzymeMetabolism.js'
 // import Evolusi from './pages/Evolusi.js';
 import Profile from './pages/Profile.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,6 +28,8 @@ function App() {
           <Route path='/profile' element ={<Profile />} />
 
           <Route path='/bioteknologi' element ={<Bioteknologi />} /> 
+
+          <Route path='/enzymemetabolism' element ={< EnzymeMetabolism/>} /> 
 
           {/* <Route path='/evolusi' element ={<Evolusi />} /> */}
 

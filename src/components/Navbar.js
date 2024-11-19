@@ -29,6 +29,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/bioteknologi">Bioteknologi</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/enzymemetabolism">Enzim dan Metabolisme</Link>
+            </li>
 
 {/* 
             <li className="nav-item">
