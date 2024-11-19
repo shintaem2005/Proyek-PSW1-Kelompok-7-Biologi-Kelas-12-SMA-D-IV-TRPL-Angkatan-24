@@ -27,8 +27,13 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/materi">Materi</Link>
+              <Link className="nav-link" to="/bioteknologi">Bioteknologi</Link>
             </li>
+
+{/* 
+            <li className="nav-item">
+              <Link className="nav-link" to="/evolusi">Evolusi</Link>
+            </li> */}
 
           </ul>
         </div>
