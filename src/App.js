@@ -6,6 +6,7 @@ import RegistrationForm from './pages/RegistrationForm.js';
 import LoginForm from './pages/LoginForm.js';
 import Homepage from './pages/Homepage.js';
 import Materi from './pages/Materi.js';
+// import Evolusi from './pages/Evolusi.js';
 import Profile from './pages/Profile.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
