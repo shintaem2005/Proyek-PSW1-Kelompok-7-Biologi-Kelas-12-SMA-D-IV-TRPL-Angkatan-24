@@ -16,9 +16,14 @@ function Bioteknologi() {
                     <p>
                         Bioteknologi adalah cabang ilmu yang menggunakan organisme hidup,
                         sistem, atau proses biologis untuk mengembangkan produk atau
-                        teknologi yang bermanfaat. Bidangnya mencakup berbagai aplikasi
-                        seperti kesehatan, pertanian, dan lingkungan.
+                        teknologi yang bermanfaat. Bidang ini mencakup berbagai aplikasi
+                        seperti:
                     </p>
+                     <ul style={styles.list}>
+                        <li>Peningkatan kesehatan melalui teknologi modern.</li>
+                        <li>Peningkatan kualitas hasil pertanian.</li>
+                        <li>Konservasi lingkungan melalui bioteknologi hijau.</li>
+                    </ul>   
                 </div>
                 <img
                     src="https://awsimages.detik.net.id/community/media/visual/2023/07/04/biologist-researcher-analyzing-biological-slide-for-agriculture-expertise.jpeg?w=600&q=90"
@@ -32,7 +37,6 @@ function Bioteknologi() {
                 <h2>Video Tentang Bioteknologi</h2>
                 <video controls style={styles.video}>
                     <source src="https://youtu.be/z4f--YdNzAM" type="video/mp4" />
-                    Browser Anda tidak mendukung elemen video.
                 </video>
             </section>
 
