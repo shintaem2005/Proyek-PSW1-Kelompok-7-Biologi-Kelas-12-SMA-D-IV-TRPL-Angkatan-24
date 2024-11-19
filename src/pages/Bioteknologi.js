@@ -1,6 +1,6 @@
 import React from "react";
 
-function App() {
+function Bioteknologi() {
     return (
         <div style={styles.container}>
 
@@ -138,4 +138,4 @@ const styles = {
     },
 };
 
-export default App;
+export default Bioteknologi;
