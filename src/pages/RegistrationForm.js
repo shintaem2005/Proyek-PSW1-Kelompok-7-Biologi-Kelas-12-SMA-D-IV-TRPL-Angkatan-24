@@ -74,7 +74,7 @@ const RegistrationForm = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary w-100">Register</button>
+        <button type="submit" className="btn btn-primary w-100 ">Register</button>
       </form>
     </div>
   );
