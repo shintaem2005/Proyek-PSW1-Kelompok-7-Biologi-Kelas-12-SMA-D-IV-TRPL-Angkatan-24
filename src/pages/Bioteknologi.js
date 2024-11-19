@@ -5,8 +5,8 @@ function Bioteknologi() {
         <div style={styles.container}>
 
             <header style={styles.header}>
-                <h1>Bioteknologi</h1>
-                <p>Pengetahuan yang Mengubah Dunia</p>
+               <h1 style={styles.title}>Bioteknologi</h1>
+                <p style={styles.subtitle}>Pengetahuan yang Mengubah Dunia</p>
             </header>
 
 
