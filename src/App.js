@@ -5,7 +5,7 @@ import Navbar from './components/Navbar.js';
 import RegistrationForm from './pages/RegistrationForm.js';
 import LoginForm from './pages/LoginForm.js';
 import Homepage from './pages/Homepage.js';
-import Materi from './pages/Materi.js';
+import Bioteknologi from './pages/Bioteknologi.js';
 // import Evolusi from './pages/Evolusi.js';
 import Profile from './pages/Profile.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,9 +24,11 @@ function App() {
 
           <Route path='/home' element={<Homepage />} />
 
-          <Route path='/materi' element={<Materi />} />
+          <Route path='/profile' element ={<Profile />} />
 
-          <Route path='/profile' element ={<Profile />} /> 
+          <Route path='/bioteknologi' element ={<Bioteknologi />} /> 
+
+          {/* <Route path='/evolusi' element ={<Evolusi />} /> */}
 
           <Route path="/" element={<Navigate to="/home" replace />} />
 
