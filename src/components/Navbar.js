@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
     
             <li className="nav-item">
-              <Link className="nav-link" to="/bioteknologi">Bioteknologi</Link>
+              <Link className="nav-link" to="/pembelahanselpewarisansifat">Pembelahan sel & Pewarisan Sifat</Link>
             </li>
 
 {/* 

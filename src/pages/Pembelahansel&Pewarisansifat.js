@@ -1,6 +1,6 @@
 import React from 'react';
 
-function App() {
+function PembelahanselPewarisansifat() {
   const appStyle = {
     fontFamily: 'Arial, sans-serif',
     margin: '0',
@@ -185,4 +185,4 @@ function App() {
   );
 }
 
-export default App;
+export default PembelahanselPewarisansifat;
