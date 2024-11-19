@@ -65,7 +65,7 @@ function Bioteknologi() {
 
 
             <footer style={styles.footer}>
-                <p>© 2024 Bioteknologi Web. Semua Hak Dilindungi.</p>
+                <p>© 2024 Bioteknologi Web. </p>
             </footer>
         </div>
     );
