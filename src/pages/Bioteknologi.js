@@ -45,13 +45,23 @@ function Bioteknologi() {
                 <h2>Aplikasi Bioteknologi</h2>
                 <div style={styles.features}>
                     <div style={styles.featureCard}>
+                     <img
+                            src="https://www.cbd.int/images/squares/biotechnology.jpg"
+                            alt="Kesehatan"
+                            style={styles.cardImage}
+                        />
                         <h3>Kesehatan</h3>
                         <p>
                             Penggunaan bioteknologi untuk pengembangan vaksin dan terapi
-                            genetik.
+                            genetik, dan obat obatan.
                         </p>
                     </div>
                     <div style={styles.featureCard}>
+                      <img
+                            src="https://cropgenetics.cimmyt.org/wp-content/uploads/2020/07/biotech-crop-genetics.jpg"
+                            alt="Pertanian"
+                            style={styles.cardImage}
+                        />
                         <h3>Pertanian</h3>
                         <p>
                             Produksi tanaman tahan hama dan peningkatan hasil panen melalui
@@ -59,14 +69,32 @@ function Bioteknologi() {
                         </p>
                     </div>
                     <div style={styles.featureCard}>
+                         <img
+                            src="https://www.nature.com/polopoly_fs/7.66986.1571932267!/image/environmental_biotech.jpg"
+                            alt="Lingkungan"
+                            style={styles.cardImage}
+                        />
                         <h3>Lingkungan</h3>
                         <p>
-                            Bioremediasi untuk membersihkan limbah menggunakan mikroorganisme.
+                             Teknologi bioremediasi untuk membersihkan limbah menggunakan mikroorganisme dan melindungi keanekaragamanhayati.
                         </p>
                     </div>
                 </div>
             </section>
 
+             <section style={styles.quizSection}>
+                <h2>Uji Pengetahuanmu</h2>
+                <p>
+                    Klik tombol di bawah ini untuk menuju halaman kuis dan menguji
+                    pemahamanmu tentang bioteknologi!
+                </p>
+                <button
+                    onClick={() => window.location.href = "/quiz"}
+                    style={styles.quizButton}
+                >
+                    Mulai Kuis
+                </button>
+            </section>
 
             <footer style={styles.footer}>
                 <p>© 2024 Bioteknologi Web. </p>
