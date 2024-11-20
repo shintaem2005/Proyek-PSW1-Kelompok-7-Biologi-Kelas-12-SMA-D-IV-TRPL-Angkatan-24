@@ -110,13 +110,18 @@ const styles = {
         margin: "0 auto",
         padding: "20px",
         fontFamily: "Arial, sans-serif",
-        backgroundColor: "#f9f9f9",
+        backgroundColor: "f0f4f8",
+        color: "#333",
+    },
+    title: {
+        fontSize: "2.5rem",
     },
     header: {
         textAlign: "center",
         padding: "20px",
         backgroundColor: "#4caf50",
         color: "white",
+        borderRadius: "8px",
     },
     introSection: {
         display: "flex",
