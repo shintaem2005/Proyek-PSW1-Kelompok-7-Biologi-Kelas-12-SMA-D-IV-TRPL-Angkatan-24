@@ -113,15 +113,19 @@ const styles = {
         backgroundColor: "f0f4f8",
         color: "#333",
     },
-    title: {
-        fontSize: "2.5rem",
-    },
     header: {
         textAlign: "center",
         padding: "20px",
         backgroundColor: "#4caf50",
         color: "white",
         borderRadius: "8px",
+    },
+    title: {
+        fontSize: "2.5rem",
+    },
+     subtitle: {
+        fontSize: "1.2rem",
+        fontStyle: "italic",
     },
     introSection: {
         display: "flex",
@@ -136,6 +140,11 @@ const styles = {
     text: {
         maxWidth: "50%",
     },
+      list: {
+        marginTop: "10px",
+        paddingLeft: "20px",
+        lineHeight: "1.6",
+    },
     image: {
         width: "40%",
         borderRadius: "8px",
@@ -148,6 +157,7 @@ const styles = {
         width: "100%",
         maxWidth: "600px",
         borderRadius: "8px",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     },
     featuresSection: {
         marginTop: "40px",
@@ -164,6 +174,30 @@ const styles = {
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         textAlign: "center",
         flex: 1,
+    },
+    cardImage: {
+        width: "100%",
+        height: "150px",
+        objectFit: "cover",
+        borderRadius: "8px",
+        marginBottom: "10px",
+    },
+    quizSection: {
+        textAlign: "center",
+        marginTop: "40px",
+        padding: "20px",
+        backgroundColor: "#e0f7fa",
+        borderRadius: "8px",
+    },
+    quizButton: {
+        marginTop: "10px",
+        padding: "10px 20px",
+        backgroundColor: "#4caf50",
+        color: "white",
+        border: "none",
+        borderRadius: "8px",
+        cursor: "pointer",
+        fontSize: "1rem",
     },
     footer: {
         textAlign: "center",
