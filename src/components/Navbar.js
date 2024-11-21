@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css"; // Import file CSS untuk styling tambahan
+import "./Navbar.css"; 
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
