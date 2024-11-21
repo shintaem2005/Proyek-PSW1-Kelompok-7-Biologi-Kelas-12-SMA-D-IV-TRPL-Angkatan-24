@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <h1>Welcome to BIOSCIENTIVE</h1>
+      
 
         <Routes>
           <Route path='/register' element={<RegistrationForm/>} />

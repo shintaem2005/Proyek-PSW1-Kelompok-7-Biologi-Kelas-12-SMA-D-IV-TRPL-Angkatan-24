@@ -8,3 +8,23 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.btn {
+  background: linear-gradient(black, rgb(12, 71, 12), rgb(85, 145, 85), rgb(12, 71, 12), black);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out, background 1s ease-in-out; /* Pastikan durasi terdefinisi */
+}
+
+.btn:hover {
+  background: linear-gradient(white, rgb(27, 105, 27), black, rgb(20, 99, 20), white);
+  transform: scale(1.2); /* Membuat efek zoom */
+}
+
+
+
+
+
