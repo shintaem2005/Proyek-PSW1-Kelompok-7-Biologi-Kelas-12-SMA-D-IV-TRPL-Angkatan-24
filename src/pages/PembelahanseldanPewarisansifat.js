@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const data = [
+const PembelahanseldanPewarisansifat = [
   {
     id: 1,
     title: "Pembelahan Sel",
@@ -37,27 +37,27 @@ function App() {
   const [selectedTopic, setSelectedTopic] = useState(null);
 
   const handleCardClick = (id) => {
-    const topic = data.find(t => t.id === id);
+    const topic = PembelahanseldanPewarisansifat.find(t => t.id === id);
     setSelectedTopic(topic);
   };
 
   return (
     <div style={styles.container}>
       <div style={styles.cardContainer}>
-        {data.map((topic) => (
+        {PembelahanseldanPewarisansifat.map((topic) => (
           <div 
             key={topic.id} 
             style={styles.card} 
             onClick={() => handleCardClick(topic.id)}
           >
-            <h2>{topic.title}</h2>
+            <h2 style={styles.cardTitle}>{topic.title}</h2>
           </div>
         ))}
       </div>
       <div style={styles.detailsContainer}>
         {selectedTopic ? (
           <div style={styles.details}>
-            <h2>{selectedTopic.title}</h2>
+            <h2 style={styles.detailsTitle}>{selectedTopic.title}</h2>
             <p>{selectedTopic.content}</p>
           </div>
         ) : (
@@ -73,40 +73,50 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     padding: '30px',
-    backgroundColor: '#e8f0f2',
+    backgroundColor: '#f0f4f8',
     height: '100vh',
   },
   cardContainer: {
     width: '30%',
     display: 'flex',
     flexDirection: 'column',
-    gap: '15px',
+    gap: '20px',
   },
   card: {
-    backgroundColor: '#a2d5f2',
+    backgroundColor: '#4CAF50', // Green for better contrast
     padding: '20px',
     borderRadius: '10px',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 6px 15px rgba(0, 0, 0, 0.1)',
     cursor: 'pointer',
     textAlign: 'center',
     transition: 'transform 0.3s ease-in-out, background-color 0.3s ease-in-out',
+    color: 'white',
   },
   cardHover: {
     transform: 'translateY(-10px)',
-    backgroundColor: '#81c7e2',
+    backgroundColor: '#388E3C', // Darker green on hover
+  },
+  cardTitle: {
+    fontSize: '20px',
+    fontWeight: 'bold',
   },
   detailsContainer: {
     width: '65%',
     padding: '20px',
     backgroundColor: '#ffffff',
     borderRadius: '10px',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 6px 15px rgba(0, 0, 0, 0.1)',
     transition: 'opacity 0.5s ease-in-out',
     opacity: 1,
     marginLeft: '20px',
   },
   details: {
     animation: 'fadeIn 0.5s ease-out',
+  },
+  detailsTitle: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    color: '#333',
   },
   placeholderText: {
     fontSize: '18px',
@@ -118,4 +128,4 @@ const styles = {
   },
 };
 
-export default App;
+export default PembelahanseldanPewarisansifat;
