@@ -8,7 +8,7 @@ import Homepage from './pages/Homepage.js';
 import Bioteknologi from './pages/Bioteknologi.js';
 import EnzymeMetabolism from './pages/EnzymeMetabolism.js';
 import PembelahanseldanPewarisansifat from './pages/PembelahanseldanPewarisansifat.js';
-// import Evolusi from './pages/Evolusi.js';
+// import Evolusi from './pages/Evolusi.js';np
 import Profile from './pages/Profile.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'

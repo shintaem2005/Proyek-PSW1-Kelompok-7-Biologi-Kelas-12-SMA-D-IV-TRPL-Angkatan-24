@@ -128,4 +128,4 @@ const styles = {
   },
 };
 
-export default PembelahanseldanPewarisansifat;
+export default App;
