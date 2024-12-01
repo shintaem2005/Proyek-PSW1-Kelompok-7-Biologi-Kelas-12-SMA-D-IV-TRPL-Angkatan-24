@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Protest+Revolution&display=swap');
-.bg-gradient-success {
-    background: linear-gradient(135deg, #011c07, #1f7b38, rgb(97, 210, 97), white);
+@keyframes animationBackground {
+  0% {
+    background-color: #011c07;
   }
+  50% {
+    background-color: #1f7b38;
+  }
+  100% {
+    background-color: rgb(97, 210, 97);
+  }
+}
+.bg-animated {
+  animation: animationBackground 5s infinite;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
 
 .herald {
   font-family: "Protest Revolution", sans-serif;
