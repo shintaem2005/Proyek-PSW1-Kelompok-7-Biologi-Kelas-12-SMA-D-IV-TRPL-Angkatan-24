@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
   
     <div>
-    <div className="container-fluid py-5 mb-5 hero-header bg-gradient-success">
+    <div className="container-fluid py-5 mb-5 hero-header bg-animated">
       <div className="container py-5">
         <div className="row justify-content-center py-5">
           <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
