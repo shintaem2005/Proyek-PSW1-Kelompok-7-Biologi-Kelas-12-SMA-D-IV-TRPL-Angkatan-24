@@ -67,3 +67,6 @@ h3, p {
   font-weight: bold;
 }
 
+.hc {
+  cursor: pointer;
+}
