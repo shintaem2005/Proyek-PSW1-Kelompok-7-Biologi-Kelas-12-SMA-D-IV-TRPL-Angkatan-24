@@ -31,13 +31,13 @@ const Profile = () => {
               <img src="" alt="Shinta E.M." className="img-fluid rounded" />
               </div>
               <em>
-              Nama : Shinta Eldo Marpaung
-              NIM : 41424026
-              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak
-              Tempat/Tanggal Lahir : 09 Oktober 2005
+              Nama : Shinta Eldo Marpaung <br />
+              NIM : 41424026 <br />
+              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
+              Tempat/Tanggal Lahir : 09 Oktober 2005 <br />
               Instagram : @klibraharuka
               </em>
-            </li>
+            </li> <br />
 
             <li>
               <strong>Nova</strong>
@@ -45,13 +45,13 @@ const Profile = () => {
               <img src="" alt="Nova W.S." className="img-fluid rounded" />
               </div>
               <em>
-              Nama : 
+              Nama : <br />
               NIM : 
-              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak
+              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
               Tempat/Tanggal Lahir : 
-              Instagram : 
+              Instagram : <br />
               </em>
-            </li>
+            </li> <br />
 
             <li>
               <strong>Nahesson</strong>
@@ -59,13 +59,13 @@ const Profile = () => {
               <img src="" alt="Nahesson" className="img-fluid rounded" />
               </div>
               <em>
-              Nama : 
-              NIM : 
-              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak
-              Tempat/Tanggal Lahir : 
-              Instagram : 
+              Nama : <br />
+              NIM : <br />
+              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
+              Tempat/Tanggal Lahir : <br />
+              Instagram : <br />
               </em>
-            </li>
+            </li> <br />
 
             <li>
               <strong>Shandra</strong>
@@ -73,13 +73,13 @@ const Profile = () => {
               <img src="" alt="Shandra" className="img-fluid rounded" />
               </div>
               <em>
-              Nama : 
-              NIM : 
-              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak
-              Tempat/Tanggal Lahir : 
-              Instagram : 
+              Nama : <br />
+              NIM : <br />
+              Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
+              Tempat/Tanggal Lahir : <br />
+              Instagram : <br />
               </em>
-            </li>
+            </li> <br />
             
           </ul>
         </p>
