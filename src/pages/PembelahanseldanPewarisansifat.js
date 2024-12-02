@@ -63,13 +63,17 @@ function App() {
           <div style={styles.details}>
             <h2 style={styles.detailsTitle}>{selectedTopic.title}</h2>
             {selectedTopic.image && (
-              <img src={selectedTopic.image} alt={selectedTopic.title} style={styles.image} />
+              <img 
+                src={selectedTopic.image} 
+                alt={selectedTopic.title} 
+                style={selectedTopic.title === "Aleli dan Genotipe" ? styles.smallImage : styles.image} 
+              />
             )}
             {selectedTopic.video && (
               <div style={styles.videoContainer}>
                 <iframe
-                  width="100%"
-                  height="315"
+                  width={selectedTopic.title === "Genetik dan DNA" ? "80%" : "100%"} // If topic is Genetik dan DNA, video will be smaller
+                  height={selectedTopic.title === "Genetik dan DNA" ? "250px" : "315px"} // Smaller height for the video
                   src={selectedTopic.video}
                   title={selectedTopic.title}
                   frameBorder="0"
@@ -145,6 +149,12 @@ const styles = {
   image: {
     width: '100%',
     maxWidth: '500px',
+    height: 'auto',
+    margin: '20px 0',
+  },
+  smallImage: {
+    width: '100%',
+    maxWidth: '300px', // Smaller size for the Aleli and Genotipe image
     height: 'auto',
     margin: '20px 0',
   },
