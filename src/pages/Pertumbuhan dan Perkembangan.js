@@ -121,13 +121,13 @@ function App() {
 
     return (
         <div style={styles.container}>
-            {/* Header */}
+          
             <header style={styles.header}>
                 <h1>Pertumbuhan dan Perkembangan</h1>
                 <p>Mempelajari proses penting dalam kehidupan manusia, mulai dari bayi hingga dewasa.</p>
             </header>
 
-            {/* Carousel */}
+      
             <section style={styles.carouselSection}>
                 <h2>Galeri Pertumbuhan</h2>
                 <div style={styles.carousel}>
@@ -144,7 +144,7 @@ function App() {
                 </div>
             </section>
 
-            {/* Pengantar */}
+         
             <section style={styles.section}>
                 <h2>Apa Itu Pertumbuhan dan Perkembangan?</h2>
                 <p>
@@ -155,7 +155,7 @@ function App() {
                 </p>
             </section>
 
-            {/* Pencarian Tabel */}
+           
             <section style={styles.section}>
                 <h2>Tabel Perkembangan Berdasarkan Usia</h2>
                 <input
@@ -185,7 +185,7 @@ function App() {
                 </table>
             </section>
 
-            {/* Tips */}
+          
             <section style={styles.section}>
                 <h2>Tips Mendukung Pertumbuhan</h2>
                 <ul style={styles.tipsList}>
@@ -195,7 +195,6 @@ function App() {
                 </ul>
             </section>
 
-            {/* Footer */}
             <footer style={styles.footer}>
                 <p>&copy; 2024 Pertumbuhan dan Perkembangan. Semua Hak Dilindungi.</p>
             </footer>
