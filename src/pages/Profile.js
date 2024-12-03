@@ -70,14 +70,14 @@ const Profile = () => {
             <li>
               <strong>Shandra</strong>
               <div className="text-center mb-3">
-              <img src="" alt="Shandra" className="img-fluid rounded" />
+              <img src="" alt="Shandra G.N." className="img-fluid rounded" />
               </div>
               <em>
-              Nama : <br />
-              NIM : <br />
+              Nama : Shandra Grace Nainggolan <br />
+              NIM : 41424029 <br />
               Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
-              Tempat/Tanggal Lahir : <br />
-              Instagram : <br />
+              Tempat/Tanggal Lahir : 13 Juni 2006 <br />
+              Instagram : @shndrangln <br />
               </em>
             </li> <br />
             
