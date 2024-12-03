@@ -97,7 +97,7 @@ function Bioteknologi() {
             </section>
 
             <footer style={styles.footer}>
-                <p>© 2024 Bioteknologi Web. </p>
+                <p> Bioteknologi . </p>
             </footer>
         </div>
     );
