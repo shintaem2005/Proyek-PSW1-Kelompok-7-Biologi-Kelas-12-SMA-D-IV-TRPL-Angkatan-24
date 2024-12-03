@@ -196,7 +196,7 @@ function App() {
             </section>
 
             <footer style={styles.footer}>
-                <p>&copy; 2024 Pertumbuhan dan Perkembangan. Semua Hak Dilindungi.</p>
+                <p>Pertumbuhan dan Perkembangan.</p>
             </footer>
         </div>
     );
