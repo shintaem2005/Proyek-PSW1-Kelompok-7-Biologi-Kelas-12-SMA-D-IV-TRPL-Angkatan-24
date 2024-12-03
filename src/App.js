@@ -8,6 +8,7 @@ import Homepage from './pages/Homepage.js';
 import Bioteknologi from './pages/Bioteknologi.js';
 import EnzymeMetabolism from './pages/EnzymeMetabolism.js';
 import PembelahanseldanPewarisansifat from './pages/PembelahanseldanPewarisansifat.js';
+import PolapolaHereditas from './pages/PolapolaHereditas.js';
 // import Evolusi from './pages/Evolusi.js';np
 import Profile from './pages/Profile.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,7 +33,9 @@ function App() {
 
           <Route path='/enzymemetabolism' element ={< EnzymeMetabolism/>} /> 
 
-          <Route path='/PembelahanseldanPewarisansifat' element ={< PembelahanseldanPewarisansifat/>} /> 
+          <Route path='/PembelahanseldanPewarisansifat' element ={< PembelahanseldanPewarisansifat/>} />
+  
+          <Route path='/PolapolaHereditas' element={<PolapolaHereditas />} />
 
           {/* <Route path='/evolusi' element ={<Evolusi />} /> */}
 
