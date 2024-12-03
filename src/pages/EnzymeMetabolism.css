@@ -1,0 +1,76 @@
+.enzyme-page {
+    background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2f5233;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #f4f9f4;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Metabolisme */
+  .metabolism-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #2f5233;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .metabolism-card:hover {
+    transform: scale(1.1); /* Membesar ketika di-hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    color: #56ab2f;
+  }
+  
+  .card-text, ul {
+    font-size: 1.2rem;
+    color: #2f5233;
+  }
+  
+  .hidden-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #2f5233;
+    display: none;
+  }
+  
+  .metabolism-card:hover .hidden-text {
+    display: block; /* Menampilkan penjelasan saat card di-hover */
+  }
+  
+  /* Card Enzim */
+  .enzyme-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #2f5233;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .enzyme-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    color: #56ab2f;
+  }
+  

@@ -1,79 +1,85 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './EnzymeMetabolism.css';
 
 const EnzymeMetabolism = () => {
   return (
-    <Container className="py-5" style={{ backgroundColor: '#f0f8ff' }}>
-      <Row className="mb-4">
-        <Col>
-          <h1 className="text-center" style={{ color: '#2e4053', fontWeight: 'bold' }}>Enzim dan Metabolisme Organisme</h1>
-          <p className="text-center" style={{ color: '#2c3e50', fontSize: '1.2em' }}>
-            Pada halaman ini, kita akan membahas peran penting enzim dalam metabolisme organisme.
-          </p>
-        </Col>
-      </Row>
+    <div className="container-fluid enzyme-page">
+      <div className="row">
+        <div className="col-md-12 text-center">
+          <h1 className="title mt-4">Enzim dan Metabolisme</h1>
+          <p className="subtitle">Mengenal peran enzim dalam proses metabolisme</p>
+        </div>
+      </div>
 
-      <Row>
-        <Col md={6}>
-          <Card className="mb-4 shadow" style={{ backgroundColor: '#d5f5e3', borderRadius: '10px' }}>
-            <Card.Body>
-              <Card.Title style={{ color: '#145a32' }}>Apa itu Enzim?</Card.Title>
-              <Card.Text style={{ color: '#186a3b' }}>
-                Enzim adalah molekul protein yang bertindak sebagai katalis dalam reaksi kimia di dalam sel organisme hidup. Enzim
-                mempercepat reaksi tanpa berubah secara permanen dalam prosesnya.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+      {/* Card Metabolisme */}
+      <div className="row mt-4 justify-content-center">
+        <div className="col-md-8">
+          <div className="card metabolism-card">
+            <div className="card-body">
+              <h2 className="card-title">Apa itu Metabolisme?</h2>
+              <p className="card-text">
+                Metabolisme merupakan serangkaian peristiwa reaksi-reaksi kimia yang berlangsung dalam sel makhluk hidup. Metabolisme juga merupakan aktivitas hidup yang selalu terjadi pada setiap sel hidup.
+              </p>
+            </div>
+            <div className="hidden-text">
+              Metabolisme adalah serangkaian peristiwa reaksi-reaksi kimia yang terjadi dalam tubuh untuk mengubah makanan menjadi energi. Proses ini menghasilkan ATP yang diperlukan untuk berbagai aktivitas vital tubuh.
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <Col md={6}>
-          <Card className="mb-4 shadow" style={{ backgroundColor: '#fadbd8', borderRadius: '10px' }}>
-            <Card.Body>
-              <Card.Title style={{ color: '#a93226' }}>Peran Enzim dalam Metabolisme</Card.Title>
-              <Card.Text style={{ color: '#c0392b' }}>
-                Enzim sangat penting dalam metabolisme karena memungkinkan reaksi kimia terjadi dengan cepat pada suhu tubuh. Tanpa enzim,
-                banyak reaksi metabolisme akan berlangsung terlalu lambat untuk mendukung kehidupan.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+      {/* Card Enzim */}
+      <div className="row mt-4">
+        <div className="col-md-6">
+          <div className="card enzyme-card">
+            <div className="card-body">
+              <h2 className="card-title">Apa itu Enzim?</h2>
+              <p className="card-text">
+                Enzim adalah molekul protein yang bertindak sebagai katalis dalam berbagai reaksi kimia biologis. Mereka mempercepat proses tanpa berubah secara permanen.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <Row>
-        <Col md={6}>
-          <Card className="mb-4 shadow" style={{ backgroundColor: '#f9e79f', borderRadius: '10px' }}>
-            <Card.Body>
-              <Card.Title style={{ color: '#b7950b' }}>Faktor-faktor yang Mempengaruhi Kerja Enzim</Card.Title>
-              <Card.Text style={{ color: '#b9770e' }}>
-                Kerja enzim dipengaruhi oleh suhu, pH, konsentrasi substrat, dan keberadaan inhibitor atau aktivator. Kondisi yang tidak
-                sesuai dapat menyebabkan enzim kehilangan aktivitasnya.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+        <div className="col-md-6">
+          <div className="card enzyme-card">
+            <div className="card-body">
+              <h2 className="card-title">Proses Metabolisme</h2>
+              <p className="card-text">
+                Metabolisme mencakup semua reaksi kimia dalam tubuh yang membantu mempertahankan kehidupan, termasuk anabolisme (pembangunan) dan katabolisme (penguraian).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <Col md={6}>
-          <Card className="mb-4 shadow" style={{ backgroundColor: '#e8daef', borderRadius: '10px' }}>
-            <Card.Body>
-              <Card.Title style={{ color: '#6c3483' }}>Jenis-Jenis Enzim dalam Metabolisme</Card.Title>
-              <Card.Text style={{ color: '#7d3c98' }}>
-                Ada banyak jenis enzim, seperti oksidoreduktase, transferase, hidrolase, dan ligase. Masing-masing enzim bekerja pada
-                reaksi spesifik dalam metabolisme tubuh.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-
-      <Row className="mt-4 text-center">
-        <Col>
-          <Button variant="primary" style={{ backgroundColor: '#2980b9', borderColor: '#2980b9', padding: '10px 20px', fontSize: '1.2em' }}>
-            Pelajari Lebih Lanjut
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+      <div className="row mt-4">
+        <div className="col-md-6">
+          <div className="card enzyme-card">
+            <div className="card-body">
+              <h2 className="card-title">Jenis-jenis Enzim</h2>
+              <ul>
+                <li>Enzim Hidrolase</li>
+                <li>Enzim Transferase</li>
+                <li>Enzim Ligase</li>
+                <li>Enzim Isomerase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="card enzyme-card">
+            <div className="card-body">
+              <h2 className="card-title">Faktor yang Mempengaruhi Kerja Enzim</h2>
+              <p>
+                Aktivitas enzim dipengaruhi oleh suhu, pH, konsentrasi substrat, dan inhibitor enzim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
