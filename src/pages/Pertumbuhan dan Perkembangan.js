@@ -1,210 +1,197 @@
 import React, { useState } from "react";
-import growthImg from "./images/growth.jpg";
-import developmentImg from "./images/development.jpg";
-import nutritionImg from "./images/nutrition.jpg";
 
-function App() {
-    const data = [
-        { age: "0-1 Tahun", growth: "Tinggi bertambah 25 cm, belajar duduk dan merangkak", development: "Mengenal suara ibu, merespon senyum" },
-        { age: "1-3 Tahun", growth: "Tinggi bertambah sekitar 10 cm per tahun", development: "Mulai berjalan, berbicara kata-kata sederhana" },
-        { age: "3-5 Tahun", growth: "Motorik halus berkembang pesat", development: "Menggambar, mengenal warna, bermain dengan teman" },
-        { age: "6-12 Tahun", growth: "Pertumbuhan stabil, berat badan meningkat", development: "Meningkatkan kemampuan logis dan sosial" },
-        { age: "12-18 Tahun", growth: "Pertumbuhan tinggi cepat (pubertas)", development: "Pemikiran abstrak, kematangan emosional" },
-    ];
-
-    const [searchTerm, setSearchTerm] = useState("");
-
-    const filteredData = data.filter((item) =>
-        item.age.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    const tips = [
-        "Berikan makanan bergizi seimbang, seperti protein, vitamin, dan mineral.",
-        "Pastikan anak tidur cukup untuk membantu pertumbuhan.",
-        "Ajak anak bermain di luar ruangan untuk mendapatkan vitamin D.",
-        "Perhatikan kesehatan emosional anak dengan komunikasi yang baik.",
-        "Berikan aktivitas fisik seperti olahraga untuk memperkuat tulang dan otot.",
-    ];
-
-    const images = [
-        { src: growthImg, caption: "Pertumbuhan fisik yang sehat." },
-        { src: developmentImg, caption: "Perkembangan kognitif dan sosial anak." },
-        { src: nutritionImg, caption: "Nutrisi penting untuk pertumbuhan optimal." },
-    ];
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
-
-    const styles = {
-        container: {
-            maxWidth: "1200px",
-            margin: "0 auto",
-            padding: "20px",
-            fontFamily: "Arial, sans-serif",
-            backgroundColor: "#f9f9f9",
-        },
-        header: {
-            textAlign: "center",
-            backgroundColor: "#e8f4ff",
-            padding: "20px",
-            borderRadius: "5px",
-        },
-        carouselSection: {
-            textAlign: "center",
-            marginBottom: "30px",
-        },
-        carousel: {
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-        },
-        carouselImage: {
-            maxWidth: "500px",
-            borderRadius: "10px",
-        },
-        carouselButton: {
-            backgroundColor: "#007bff",
-            color: "white",
-            border: "none",
-            padding: "10px 20px",
-            margin: "0 10px",
-            cursor: "pointer",
-            borderRadius: "5px",
-        },
-        carouselButtonHover: {
-            backgroundColor: "#0056b3",
-        },
-        section: {
-            marginBottom: "30px",
-        },
-        searchInput: {
-            width: "100%",
-            padding: "10px",
-            marginBottom: "10px",
-            borderRadius: "5px",
-            border: "1px solid #ddd",
-        },
-        dataTable: {
-            width: "100%",
-            borderCollapse: "collapse",
-            marginTop: "20px",
-        },
-        tableCell: {
-            border: "1px solid #ddd",
-            padding: "10px",
-        },
-        tableHeader: {
-            backgroundColor: "#f0f8ff",
-            fontWeight: "bold",
-        },
-        tipsList: {
-            listStyle: "square",
-            paddingLeft: "20px",
-        },
-        footer: {
-            textAlign: "center",
-            backgroundColor: "#e8f4ff",
-            padding: "10px",
-            borderRadius: "5px",
-            marginTop: "20px",
-        },
-    };
-
+function PertumbuhanDanPerkembangan() {
     return (
         <div style={styles.container}>
-          
             <header style={styles.header}>
-                <h1>Pertumbuhan dan Perkembangan</h1>
-                <p>Mempelajari proses penting dalam kehidupan manusia, mulai dari bayi hingga dewasa.</p>
+                <h1 style={styles.title}>Pertumbuhan dan Perkembangan</h1>
+                <p style={styles.subtitle}>
+                    Memahami Proses Kehidupan dari Awal Hingga Dewasa
+                </p>
             </header>
 
-      
-            <section style={styles.carouselSection}>
-                <h2>Galeri Pertumbuhan</h2>
-                <div style={styles.carousel}>
-                    <button style={styles.carouselButton} onClick={handlePrev}>
-                        &lt;
-                    </button>
-                    <div>
-                        <img style={styles.carouselImage} src={images[currentIndex].src} alt="Carousel" />
-                        <p>{images[currentIndex].caption}</p>
-                    </div>
-                    <button style={styles.carouselButton} onClick={handleNext}>
-                        &gt;
-                    </button>
+            
+            <section style={styles.introSection}>
+                <div style={styles.text}>
+                    <h2>Apa itu Pertumbuhan dan Perkembangan?</h2>
+                    <p>
+                        Pertumbuhan adalah peningkatan ukuran fisik dan jumlah sel pada
+                        organisme, sedangkan perkembangan adalah proses menuju kematangan
+                        fungsi organisme. Keduanya adalah bagian penting dalam siklus
+                        kehidupan makhluk hidup.
+                    </p>
+                    <ul style={styles.list}>
+                        <li>
+                            *Pertumbuhan:* Penambahan tinggi, berat, dan ukuran tubuh.
+                        </li>
+                        <li>
+                            *Perkembangan:* Peningkatan fungsi organ, kemampuan berpikir,
+                            dan perilaku.
+                        </li>
+                        <li>
+                            *Faktor Internal:* Genetik, hormon, dan metabolisme.
+                        </li>
+                        <li>
+                            *Faktor Eksternal:* Nutrisi, lingkungan, dan aktivitas fisik.
+                        </li>
+                    </ul>
                 </div>
+                <img
+                    src="https://cdn0-production-images-kly.akamaized.net/rSaVPF0K_3T8AeW5GTgkdiDCJZ0=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4006837/original/077291000_1654788618-morning-shot-of-woman-giving-food-to-her-daughter.jpg"
+                    alt="Ilustrasi Pertumbuhan dan Perkembangan"
+                    style={styles.largeImage}
+                />
             </section>
 
-         
-            <section style={styles.section}>
-                <h2>Apa Itu Pertumbuhan dan Perkembangan?</h2>
-                <p>
-                    <b>Pertumbuhan</b> adalah peningkatan ukuran fisik tubuh seperti tinggi badan dan berat badan. Contohnya, bayi yang awalnya memiliki tinggi 50 cm dapat mencapai 75 cm dalam tahun pertama.
-                </p>
-                <p>
-                    <b>Perkembangan</b> melibatkan kemampuan emosional, sosial, dan kognitif, seperti bayi yang awalnya hanya menangis belajar berbicara dan memahami lingkungan.
-                </p>
+            
+            <section style={styles.videoSection}>
+                <h2>Video: Proses Pertumbuhan dan Perkembangan</h2>
+                <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/7HFWtiRW7es"
+                    title="Video Tentang Pertumbuhan dan Perkembangan"
+                    allowFullScreen
+                    style={{ border: "none", borderRadius: "10px" }}
+                ></iframe>
             </section>
 
            
-            <section style={styles.section}>
-                <h2>Tabel Perkembangan Berdasarkan Usia</h2>
-                <input
-                    type="text"
-                    style={styles.searchInput}
-                    placeholder="Cari berdasarkan usia..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                />
-                <table style={styles.dataTable}>
-                    <thead>
-                        <tr>
-                            <th style={{ ...styles.tableCell, ...styles.tableHeader }}>Usia</th>
-                            <th style={{ ...styles.tableCell, ...styles.tableHeader }}>Pertumbuhan</th>
-                            <th style={{ ...styles.tableCell, ...styles.tableHeader }}>Perkembangan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {filteredData.map((item, index) => (
-                            <tr key={index}>
-                                <td style={styles.tableCell}>{item.age}</td>
-                                <td style={styles.tableCell}>{item.growth}</td>
-                                <td style={styles.tableCell}>{item.development}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+            <section style={styles.featuresSection}>
+                <h2>Faktor-Faktor Pertumbuhan dan Perkembangan</h2>
+                <div style={styles.features}>
+                    <div style={styles.featureCard}>
+                        <img
+                            src="https://cdn.popmama.com/content-images/post/20230420/bayi-yang-cukup-berat-badan-saat-lahir-akan-lebih-pintar-0a5d4b4c43f3ea8e9b5e28edb3bb9a29_750x500.jpg"
+                            alt="Faktor Genetik"
+                            style={styles.cardImage}
+                        />
+                        <h3>Faktor Genetik</h3>
+                        <p>
+                            Faktor genetik mempengaruhi potensi pertumbuhan tinggi badan,
+                            struktur tubuh, dan bakat bawaan.
+                        </p>
+                    </div>
+                    <div style={styles.featureCard}>
+                        <img
+                            src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1616732154/attached_image/makanan-yang-dapat-meningkatkan-imun-anak.jpg"
+                            alt="Nutrisi"
+                            style={styles.cardImage}
+                        />
+                        <h3>Nutrisi</h3>
+                        <p>
+                            Nutrisi yang cukup dan seimbang penting untuk mendukung proses
+                            pertumbuhan fisik dan perkembangan otak.
+                        </p>
+                    </div>
+                    <div style={styles.featureCard}>
+                        <img
+                            src="https://awsimages.detik.net.id/community/media/visual/2023/08/24/memahami-anak-anak-tantrum.jpeg?w=700&q=90"
+                            alt="Pengaruh Lingkungan"
+                            style={styles.cardImage}
+                        />
+                        <h3>Pengaruh Lingkungan</h3>
+                        <p>
+                            Lingkungan yang mendukung seperti keluarga, sekolah, dan
+                            aktivitas sosial membantu perkembangan emosional dan kognitif.
+                        </p>
+                    </div>
+                </div>
             </section>
 
-          
-            <section style={styles.section}>
-                <h2>Tips Mendukung Pertumbuhan</h2>
-                <ul style={styles.tipsList}>
-                    {tips.map((tip, index) => (
-                        <li key={index}>{tip}</li>
-                    ))}
-                </ul>
+            
+            <section style={styles.quizSection}>
+                <h2>Uji Pengetahuanmu</h2>
+                <Quiz />
             </section>
 
             <footer style={styles.footer}>
-                <p>Pertumbuhan dan Perkembangan.</p>
+                <p>
+                    © 2024 Pertumbuhan dan Perkembangan Web | Lihat detail lebih lanjut{" "}
+                    <a
+                        href="https://id.wikipedia.org/wiki/Pertumbuhan_dan_Perkembangan"
+                        style={styles.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        di Wikipedia
+                    </a>
+                </p>
             </footer>
         </div>
     );
 }
 
-export default App;
+function Quiz() {
+    const questions = [
+        {
+            questionText: "Apa perbedaan antara pertumbuhan dan perkembangan?",
+            answerOptions: [
+                { answerText: "Pertumbuhan bersifat fisik, perkembangan bersifat fungsi", isCorrect: true },
+                { answerText: "Pertumbuhan bersifat mental, perkembangan bersifat fisik", isCorrect: false },
+                { answerText: "Keduanya sama", isCorrect: false },
+                { answerText: "Tidak ada hubungan", isCorrect: false },
+            ],
+        },
+        {
+            questionText: "Faktor apa yang memengaruhi pertumbuhan manusia?",
+            answerOptions: [
+                { answerText: "Genetik, nutrisi, dan lingkungan", isCorrect: true },
+                { answerText: "Usia saja", isCorrect: false },
+                { answerText: "Jumlah aktivitas", isCorrect: false },
+                { answerText: "Pengaruh budaya", isCorrect: false },
+            ],
+        },
+    ];
 
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [score, setScore] = useState(0);
+    const [showScore, setShowScore] = useState(false);
 
+    const handleAnswerOptionClick = (isCorrect) => {
+        if (isCorrect) {
+            setScore((prevScore) => prevScore + 1);
+        }
 
+        const nextQuestion = currentQuestion + 1;
+        if (nextQuestion < questions.length) {
+            setCurrentQuestion(nextQuestion);
+        } else {
+            setShowScore(true);
+        }
+    };
 
+    return (
+        <div style={quizStyles.container}>
+            {showScore ? (
+                <div style={quizStyles.scoreSection}>
+                    Anda mendapatkan skor {score} dari {questions.length}!
+                </div>
+            ) : (
+                <div>
+                    <div style={quizStyles.questionSection}>
+                        <div style={quizStyles.questionCount}>
+                            <span>Pertanyaan {currentQuestion + 1}</span>/{questions.length}
+                        </div>
+                        <div style={quizStyles.questionText}>
+                            {questions[currentQuestion].questionText}
+                        </div>
+                    </div>
+                    <div style={quizStyles.answerSection}>
+                        {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                            <button
+                                key={index}
+                                style={quizStyles.answerButton}
+                                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                            >
+                                {answerOption.answerText}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+}
 
+export default PertumbuhanDanPerkembangan;
