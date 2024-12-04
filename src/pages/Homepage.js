@@ -113,7 +113,7 @@ const Homepage = () => {
         <div className="card-container">
             <img class="card-img-top" src="https://cdn.prod.website-files.com/62041b52ed8a5756a8361408/650b76b2a66ebc491e52d45f_abundance-2.jpg" alt="Card Bioteknologi" />
             <div class="card-content">
-              <h5 class="card-title">Reproduksi Sel</h5>
+              <h5 class="card-title">Reproduksi Sel</h5>g
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <button className="btn"><a href="./ReproduksiSel" className="btn">Go To Page</a>
               </button>
