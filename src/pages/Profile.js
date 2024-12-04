@@ -45,11 +45,11 @@ const Profile = () => {
               <img src="" alt="Nova W.S." className="img-fluid rounded" />
               </div>
               <em>
-              Nama : <br />
-              NIM : 
+              Nama : Nova Windyana Simanjuntak <br />
+              NIM : 41424054 <br/>
               Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
-              Tempat/Tanggal Lahir : 
-              Instagram : <br />
+              Tempat/Tanggal Lahir : 21 November 2006 <br />
+              Instagram : @novapfft
               </em>
             </li> <br />
 
