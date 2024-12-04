@@ -1,142 +1,232 @@
 import React, { useState } from "react";
 
-const App = () => {
-  const [quizStep, setQuizStep] = useState(0);
-  const [score, setScore] = useState(0);
+function Genetika() {
+    return (
+        <div style={styles.container}>
+            <header style={styles.header}>
+                <h1 style={styles.title}>Substansi Materi Genetika</h1>
+                <p style={styles.subtitle}>
+                    Menjelajahi Dasar-Dasar Kehidupan Melalui DNA dan Gen
+                </p>
+            </header>
 
-  const questions = [
-    {
-      question: "Apa itu Genetika?",
-      options: [
-        "Ilmu tentang komputer",
-        "Ilmu tentang pewarisan sifat",
-        "Ilmu tentang cuaca",
-        "Ilmu tentang hewan",
-      ],
-      answer: 1,
-    },
-    {
-      question: "Siapa yang dikenal sebagai 'Bapak Genetika'?",
-      options: ["Albert Einstein", "Gregor Mendel", "Charles Darwin", "Isaac Newton"],
-      answer: 1,
-    },
-  
-    {
-      question: "Gen terletak di bagian mana dari sel?",
-      options: ["Dinding sel", "Nukleus", "Sitoplasma", "Membran"],
-      answer: 1,
-    },
-  ];
+           
+            <section style={styles.introSection}>
+                <div style={styles.text}>
+                    <h2>Apa itu Substansi Materi Genetika?</h2>
+                    <p>
+                        Substansi materi genetika adalah molekul biologis yang berperan dalam
+                        pewarisan sifat dan penyimpanan informasi genetik pada makhluk hidup.
+                        Contohnya adalah DNA dan RNA yang merupakan dasar dari semua bentuk kehidupan.
+                    </p>
+                    <ul style={styles.list}>
+                        <li>
+                            *DNA (Deoxyribonucleic Acid):* Molekul yang menyimpan informasi genetik.
+                        </li>
+                        <li>
+                            *RNA (Ribonucleic Acid):* Berperan dalam sintesis protein dan pembawa pesan genetik.
+                        </li>
+                        <li>
+                            *Gen:* Unit pewarisan sifat yang terdapat dalam DNA.
+                        </li>
+                        <li>
+                            *Kromosom:* Struktur yang mengorganisasi DNA dalam sel.
+                        </li>
+                    </ul>
+                </div>
+                <img
+                    src="https://cdn.pixabay.com/photo/2016/03/31/20/11/dna-1295667_960_720.png"
+                    alt="Ilustrasi Materi Genetika"
+                    style={styles.largeImage}
+                />
+            </section>
 
-  const handleAnswer = (index) => {
-    if (index === questions[quizStep].answer) {
-      setScore(score + 1);
-    }
-    if (quizStep < questions.length - 1) {
-      setQuizStep(quizStep + 1);
-    } else {
-      alert(`Kuis selesai! Skor Anda: ${score + 1}`);
-      setQuizStep(0);
-      setScore(0);
-    }
-  };
+           
+            <section style={styles.videoSection}>
+                <h2>Video: Penjelasan Tentang DNA dan Gen</h2>
+                <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/8m6hHRlKwxY"
+                    title="Video Tentang DNA dan Gen"
+                    allowFullScreen
+                    style={{ border: "none", borderRadius: "10px" }}
+                ></iframe>
+            </section>
 
-  return (
-    <div style={styles.container}>
-      <header style={styles.header}>
-        <h1>Materi Genetika</h1>
-      </header>
+            
+            <section style={styles.featuresSection}>
+                <h2>Aplikasi Substansi Materi Genetika</h2>
+                <div style={styles.features}>
+                    <div style={styles.featureCard}>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2020/12/20/15/15/genetics-5849462_960_720.png"
+                            alt="Penelitian Genetik"
+                            style={styles.cardImage}
+                        />
+                        <h3>Penelitian Genetik</h3>
+                        <p>
+                            Studi mendalam tentang gen dan mutasi untuk memahami penyakit dan
+                            perkembangan manusia.
+                        </p>
+                    </div>
+                    <div style={styles.featureCard}>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2019/05/29/13/24/bioengineering-4232655_960_720.jpg"
+                            alt="Rekayasa Genetik"
+                            style={styles.cardImage}
+                        />
+                        <h3>Rekayasa Genetik</h3>
+                        <p>
+                            Teknik untuk memodifikasi DNA guna menghasilkan organisme dengan
+                            sifat tertentu, seperti tanaman tahan hama.
+                        </p>
+                    </div>
+                    <div style={styles.featureCard}>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2020/09/14/19/33/science-5579576_960_720.jpg"
+                            alt="Medis"
+                            style={styles.cardImage}
+                        />
+                        <h3>Medis</h3>
+                        <p>
+                            Terapi gen untuk menyembuhkan penyakit genetik dan pengembangan obat
+                            berbasis biologi molekuler.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-      <section style={styles.content}>
-        <h2>Pengenalan Genetika</h2>
-        <p>
-          Genetika adalah cabang biologi yang mempelajari tentang gen, pewarisan sifat, dan bagaimana sifat-sifat
-          tersebut diteruskan dari satu generasi ke generasi lainnya.
-        </p>
-        <img
-          src="https://via.placeholder.com/600x300"
-          alt="DNA Struktur"
-          style={styles.image}
-        />
-        <video controls style={styles.video}>
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
-          Browser Anda tidak mendukung video.
-        </video>
-      </section>
+         
+            <section style={styles.quizSection}>
+                <h2>Uji Pengetahuanmu</h2>
+                <Quiz />
+            </section>
 
-      <section style={styles.quiz}>
-        <h2>Kuis: Uji Pemahaman Anda</h2>
-        {quizStep < questions.length ? (
-          <div>
-            <h3>{questions[quizStep].question}</h3>
-            <div style={styles.options}>
-              {questions[quizStep].options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(index)}
-                  style={styles.optionButton}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <p>Kuis selesai! Skor Anda: {score}</p>
-        )}
-      </section>
-    </div>
-  );
-};
+            
+            <footer style={styles.footer}>
+                <p>
+                    © 2024 Substansi Materi Genetika Web | Lihat detail lebih lanjut{" "}
+                    <a
+                        href="https://id.wikipedia.org/wiki/Genetika"
+                        style={styles.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        di Wikipedia
+                    </a>
+                </p>
+            </footer>
+        </div>
+    );
+}
 
+function Quiz() {
+    const questions = [
+        {
+            questionText: "Apa molekul utama yang menyimpan informasi genetik?",
+            answerOptions: [
+                { answerText: "RNA", isCorrect: false },
+                { answerText: "DNA", isCorrect: true },
+                { answerText: "Protein", isCorrect: false },
+                { answerText: "Kromosom", isCorrect: false },
+            ],
+        },
+        {
+            questionText: "Apa peran RNA dalam tubuh?",
+            answerOptions: [
+                { answerText: "Penyimpanan informasi genetik", isCorrect: false },
+                { answerText: "Sintesis protein", isCorrect: true },
+                { answerText: "Pewarisan sifat", isCorrect: false },
+                { answerText: "Replikasi DNA", isCorrect: false },
+            ],
+        },
+    ];
+
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [score, setScore] = useState(0);
+    const [showScore, setShowScore] = useState(false);
+
+    const handleAnswerOptionClick = (isCorrect) => {
+        if (isCorrect) {
+            setScore((prevScore) => prevScore + 1);
+        }
+
+        const nextQuestion = currentQuestion + 1;
+        if (nextQuestion < questions.length) {
+            setCurrentQuestion(nextQuestion);
+        } else {
+            setShowScore(true);
+        }
+    };
+
+    return (
+        <div style={quizStyles.container}>
+            {showScore ? (
+                <div style={quizStyles.scoreSection}>
+                    Anda mendapatkan skor {score} dari {questions.length}!
+                </div>
+            ) : (
+                <div>
+                    <div style={quizStyles.questionSection}>
+                        <div style={quizStyles.questionCount}>
+                            <span>Pertanyaan {currentQuestion + 1}</span>/{questions.length}
+                        </div>
+                        <div style={quizStyles.questionText}>
+                            {questions[currentQuestion].questionText}
+                        </div>
+                    </div>
+                    <div style={quizStyles.answerSection}>
+                        {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                            <button
+                                key={index}
+                                style={quizStyles.answerButton}
+                                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                            >
+                                {answerOption.answerText}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+}
 
 const styles = {
-  container: {
-    fontFamily: "'Arial', sans-serif",
-    margin: "0 auto",
-    padding: "20px",
-    maxWidth: "800px",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "8px",
-    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-  },
-  header: {
-    textAlign: "center",
-    marginBottom: "20px",
-  },
-  content: {
-    marginBottom: "30px",
-  },
-  image: {
-    width: "100%",
-    height: "auto",
-    marginBottom: "20px",
-  },
-  video: {
-    width: "100%",
-    height: "auto",
-    marginBottom: "20px",
-  },
-  quiz: {
-    marginTop: "30px",
-  },
-  options: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-  },
-  optionButton: {
-    padding: "10px 20px",
-    fontSize: "16px",
-    borderRadius: "4px",
-    border: "1px solid #ddd",
-    cursor: "pointer",
-    backgroundColor: "#007bff",
-    color: "#fff",
-  },
+    container: {
+        padding: "20px",
+        fontFamily: "Arial, sans-serif",
+        backgroundImage: "url('https://images.unsplash.com/photo-1554941426-74da743f1b74')",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        color: "#fff",
+    },
+    header: { textAlign: "center", marginBottom: "20px" },
+    title: { fontSize: "2.5rem", margin: 0 },
+    subtitle: { fontSize: "1.2rem" },
+    introSection: { display: "flex", alignItems: "center", gap: "20px", marginBottom: "20px" },
+    text: { flex: 1 },
+    list: { marginTop: "10px", paddingLeft: "20px" },
+    largeImage: { width: "50%", borderRadius: "20px" },
+    videoSection: { marginBottom: "20px" },
+    featuresSection: { marginBottom: "20px" },
+    features: { display: "flex", gap: "20px" },
+    featureCard: { flex: 1, textAlign: "center", padding: "10px", backgroundColor: "#333", borderRadius: "10px" },
+    cardImage: { width: "100%", borderRadius: "10px" },
+    quizSection: { marginBottom: "20px" },
+    footer: { textAlign: "center", padding: "10px", marginTop: "20px" },
+    link: { color: "#4CAF50", textDecoration: "none" },
 };
 
-export default App;
+const quizStyles = {
+    container: { marginTop: "20px", padding: "20px", backgroundColor: "#444", borderRadius: "10px" },
+    questionSection: { marginBottom: "20px" },
+    questionCount: { fontSize: "1rem", marginBottom: "5px" },
+    questionText: { fontSize: "1.2rem" },
+    answerSection: { display: "flex", flexDirection: "column", gap: "10px" },
+    answerButton: { padding: "10px", borderRadius: "5px", border: "none", backgroundColor: "#4CAF50", color: "#fff" },
+    scoreSection: { fontSize: "1.2rem" },
+};
+
+export default Genetika;
