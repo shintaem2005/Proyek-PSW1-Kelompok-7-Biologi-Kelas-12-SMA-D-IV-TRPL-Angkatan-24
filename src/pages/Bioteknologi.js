@@ -1,212 +1,233 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Bioteknologi() {
     return (
         <div style={styles.container}>
-
             <header style={styles.header}>
                 <h1 style={styles.title}>Bioteknologi</h1>
-                <p style={styles.subtitle}>Pengetahuan yang Mengubah Dunia</p>
+                <p style={styles.subtitle}>
+                    Mengubah Dunia dengan Pengetahuan dan Inovasi Modern
+                </p>
             </header>
 
-
+            
             <section style={styles.introSection}>
                 <div style={styles.text}>
                     <h2>Apa itu Bioteknologi?</h2>
                     <p>
-                        Bioteknologi adalah cabang ilmu yang menggunakan organisme hidup,
-                        sistem, atau proses biologis untuk mengembangkan produk atau
-                        teknologi yang bermanfaat. Bidang ini mencakup berbagai aplikasi
-                        seperti:
+                        Bioteknologi adalah aplikasi teknologi yang memanfaatkan organisme
+                        hidup, sistem, atau proses biologis untuk menghasilkan produk yang
+                        bermanfaat. Bioteknologi memiliki potensi besar untuk mengubah cara
+                        kita hidup dan berinteraksi dengan dunia.
                     </p>
                     <ul style={styles.list}>
-                        <li>Peningkatan kesehatan melalui teknologi modern.</li>
-                        <li>Peningkatan kualitas hasil pertanian.</li>
-                        <li>Konservasi lingkungan melalui bioteknologi hijau.</li>
+                        <li>
+                            *Kesehatan:* Inovasi vaksin, terapi gen, dan antibiotik baru.
+                        </li>
+                        <li>
+                            *Pertanian:* Rekayasa genetika tanaman untuk hasil panen yang
+                            lebih baik.
+                        </li>
+                        <li>
+                            *Lingkungan:* Bioteknologi hijau untuk pengelolaan limbah dan
+                            konservasi alam.
+                        </li>
+                        <li>
+                            *Energi:* Produksi biofuel sebagai alternatif bahan bakar fosil.
+                        </li>
                     </ul>
                 </div>
                 <img
-                    src="https://awsimages.detik.net.id/community/media/visual/2023/07/04/biologist-researcher-analyzing-biological-slide-for-agriculture-expertise.jpeg?w=600&q=90"
+                    src="https://awsimages.detik.net.id/community/media/visual/2023/07/04/biologist-researcher-analyzing-biological-slide-for-agriculture-expertise.jpeg?w=1200&q=90"
                     alt="Ilustrasi Bioteknologi"
-                    style={styles.image}
+                    style={styles.largeImage}
                 />
             </section>
-
-
+}
             <section style={styles.videoSection}>
-                <h2>Video Tentang Bioteknologi</h2>
-                <video controls style={styles.video}>
-                    <source src="https://youtu.be/z4f--YdNzAM" type="video/mp4" />
-                </video>
+                <h2>Video: Bagaimana Bioteknologi Mengubah Dunia</h2>
+                <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/z4f--YdNzAM"
+                    title="Video Tentang Bioteknologi"
+                    allowFullScreen
+                    style={{ border: "none", borderRadius: "10px" }}
+                ></iframe>
             </section>
 
-
+           
             <section style={styles.featuresSection}>
                 <h2>Aplikasi Bioteknologi</h2>
                 <div style={styles.features}>
                     <div style={styles.featureCard}>
                         <img
-                            src="https://www.cbd.int/images/squares/biotechnology.jpg"
+                            src="https://cdn1.katadata.co.id/media/images/thumb/2023/01/16/Contoh_Bioteknologi_Modern-2023_01_16-13_34_11_5c35e4f369673a7b6880f573bfb0c597_960x640_thumb.jpg"
                             alt="Kesehatan"
                             style={styles.cardImage}
                         />
                         <h3>Kesehatan</h3>
                         <p>
-                            Penggunaan bioteknologi untuk pengembangan vaksin dan terapi
-                            genetik, dan obat obatan.
+                            Penggunaan bioteknologi dalam pengembangan vaksin, terapi genetik,
+                            dan biomedis modern untuk meningkatkan kualitas hidup manusia.
                         </p>
                     </div>
                     <div style={styles.featureCard}>
                         <img
-                            src="https://cropgenetics.cimmyt.org/wp-content/uploads/2020/07/biotech-crop-genetics.jpg"
+                            src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/305/2024/01/24/15-2329069810.png"
                             alt="Pertanian"
                             style={styles.cardImage}
                         />
                         <h3>Pertanian</h3>
                         <p>
-                            Produksi tanaman tahan hama dan peningkatan hasil panen melalui
-                            rekayasa genetik.
+                            Produksi tanaman yang tahan terhadap hama, penyakit, dan kondisi
+                            lingkungan yang ekstrem melalui rekayasa genetika.
                         </p>
                     </div>
                     <div style={styles.featureCard}>
                         <img
-                            src="https://www.nature.com/polopoly_fs/7.66986.1571932267!/image/environmental_biotech.jpg"
+                            src="https://waterpedia.co.id/wp-content/uploads/2023/07/Pengolahan-air-limbah-dengan-bioteknologi.jpg"
                             alt="Lingkungan"
                             style={styles.cardImage}
                         />
                         <h3>Lingkungan</h3>
                         <p>
-                            Teknologi bioremediasi untuk membersihkan limbah menggunakan mikroorganisme dan melindungi keanekaragamanhayati.
+                            Teknologi untuk membersihkan limbah, menjaga biodiversitas, dan
+                            mengurangi jejak karbon global.
                         </p>
                     </div>
                 </div>
             </section>
 
+          
             <section style={styles.quizSection}>
                 <h2>Uji Pengetahuanmu</h2>
-                <p>
-                    Klik tombol di bawah ini untuk menuju halaman kuis dan menguji
-                    pemahamanmu tentang bioteknologi!
-                </p>
-                <button
-                    onClick={() => window.location.href = "/quiz"}
-                    style={styles.quizButton}
-                >
-                    Mulai Kuis
-                </button>
+                <Quiz />
             </section>
 
             <footer style={styles.footer}>
-                <p> Bioteknologi . </p>
+                <p>
+                    © 2024 Bioteknologi Web | Lihat detail lebih lanjut{" "}
+                    <a
+                        href="https://id.wikipedia.org/wiki/Bioteknologi"
+                        style={styles.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        di Wikipedia
+                    </a>
+                </p>
             </footer>
         </div>
     );
 }
 
+function Quiz() {
+    const questions = [
+        {
+            questionText: "Apa yang dimaksud dengan bioteknologi?",
+            answerOptions: [
+                { answerText: "Ilmu yang mempelajari makhluk hidup", isCorrect: false },
+                { answerText: "Teknologi yang menggunakan organisme hidup", isCorrect: true },
+                { answerText: "Teknik untuk memanipulasi DNA", isCorrect: false },
+                { answerText: "Ilmu tentang mikrobiologi", isCorrect: false },
+            ],
+        },
+        {
+            questionText: "Apa contoh bioteknologi tradisional?",
+            answerOptions: [
+                { answerText: "Pembuatan roti dan keju", isCorrect: true },
+                { answerText: "Produksi antibiotik", isCorrect: false },
+                { answerText: "Kloning hewan", isCorrect: false },
+                { answerText: "Terapi gen", isCorrect: false },
+            ],
+        },
+    ];
+
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [score, setScore] = useState(0);
+    const [showScore, setShowScore] = useState(false);
+
+    const handleAnswerOptionClick = (isCorrect) => {
+        if (isCorrect) {
+            setScore((prevScore) => prevScore + 1);
+        }
+
+        const nextQuestion = currentQuestion + 1;
+        if (nextQuestion < questions.length) {
+            setCurrentQuestion(nextQuestion);
+        } else {
+            setShowScore(true);
+        }
+    };
+
+    return (
+        <div style={quizStyles.container}>
+            {showScore ? (
+                <div style={quizStyles.scoreSection}>
+                    Anda mendapatkan skor {score} dari {questions.length}!
+                </div>
+            ) : (
+                <div>
+                    <div style={quizStyles.questionSection}>
+                        <div style={quizStyles.questionCount}>
+                            <span>Pertanyaan {currentQuestion + 1}</span>/{questions.length}
+                        </div>
+                        <div style={quizStyles.questionText}>
+                            {questions[currentQuestion].questionText}
+                        </div>
+                    </div>
+                    <div style={quizStyles.answerSection}>
+                        {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                            <button
+                                key={index}
+                                style={quizStyles.answerButton}
+                                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                            >
+                                {answerOption.answerText}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+}
 
 const styles = {
     container: {
-        maxWidth: "1200px",
-        margin: "0 auto",
         padding: "20px",
         fontFamily: "Arial, sans-serif",
-        backgroundColor: "f0f4f8",
-        color: "#333",
+        backgroundImage: "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e570043b-1daf-4dbd-b3f7-edae04b144cd/di5m5bk-0b452c20-5cac-4343-a2c3-7656d54b9dd0.jpg/v1/fit/w_828,h_1352,q_70,strp/swamp__by_nezukorempadeviart07_di5m5bk-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU2OCIsInBhdGgiOiJcL2ZcL2U1NzAwNDNiLTFkYWYtNGRiZC1iM2Y3LWVkYWUwNGIxNDRjZFwvZGk1bTViay0wYjQ1MmMyMC01Y2FjLTQzNDMtYTJjMy03NjU2ZDU0YjlkZDAuanBnIiwid2lkdGgiOiI8PTk2MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gm_52HL-u5b5o0V4dzdCH8K0xc_BLvyTdE8_i6drzSk')",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        color: "#fff",
     },
-    header: {
-        textAlign: "center",
-        padding: "20px",
-        backgroundColor: "#4caf50",
-        color: "white",
-        borderRadius: "8px",
-    },
-    title: {
-        fontSize: "2.5rem",
-    },
-    subtitle: {
-        fontSize: "1.2rem",
-        fontStyle: "italic",
-    },
-    introSection: {
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "20px",
-        backgroundColor: "#ffffff",
-        marginTop: "20px",
-        borderRadius: "8px",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    },
-    text: {
-        maxWidth: "50%",
-    },
-    list: {
-        marginTop: "10px",
-        paddingLeft: "20px",
-        lineHeight: "1.6",
-    },
-    image: {
-        width: "40%",
-        borderRadius: "8px",
-    },
-    videoSection: {
-        marginTop: "40px",
-        textAlign: "center",
-    },
-    video: {
-        width: "100%",
-        maxWidth: "600px",
-        borderRadius: "8px",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    },
-    featuresSection: {
-        marginTop: "40px",
-    },
-    features: {
-        display: "flex",
-        justifyContent: "space-between",
-        gap: "20px",
-    },
-    featureCard: {
-        backgroundColor: "#ffffff",
-        padding: "20px",
-        borderRadius: "8px",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        textAlign: "center",
-        flex: 1,
-    },
-    cardImage: {
-        width: "100%",
-        height: "150px",
-        objectFit: "cover",
-        borderRadius: "8px",
-        marginBottom: "10px",
-    },
-    quizSection: {
-        textAlign: "center",
-        marginTop: "40px",
-        padding: "20px",
-        backgroundColor: "#e0f7fa",
-        borderRadius: "8px",
-    },
-    quizButton: {
-        marginTop: "10px",
-        padding: "10px 20px",
-        backgroundColor: "#4caf50",
-        color: "white",
-        border: "none",
-        borderRadius: "8px",
-        cursor: "pointer",
-        fontSize: "1rem",
-    },
-    footer: {
-        textAlign: "center",
-        marginTop: "40px",
-        padding: "10px",
-        backgroundColor: "#4caf50",
-        color: "white",
-        borderRadius: "8px",
-    },
+    header: { textAlign: "center", marginBottom: "20px" },
+    title: { fontSize: "2.5rem", margin: 0 },
+    subtitle: { fontSize: "1.2rem" },
+    introSection: { display: "flex", alignItems: "center", gap: "20px", marginBottom: "20px" },
+    text: { flex: 1 },
+    list: { marginTop: "10px", paddingLeft: "20px" },
+    largeImage: { width: "50%", borderRadius: "20px" },
+    videoSection: { marginBottom: "20px" },
+    featuresSection: { marginBottom: "20px" },
+    features: { display: "flex", gap: "20px" },
+    featureCard: { flex: 1, textAlign: "center", padding: "10px", backgroundColor: "#333", borderRadius: "10px" },
+    cardImage: { width: "100%", borderRadius: "10px" },
+    quizSection: { marginBottom: "20px" },
+    footer: { textAlign: "center", padding: "10px", marginTop: "20px" },
+    link: { color: "#4CAF50", textDecoration: "none" },
+};
+
+const quizStyles = {
+    container: { marginTop: "20px", padding: "20px", backgroundColor: "#444", borderRadius: "10px" },
+    questionSection: { marginBottom: "20px" },
+    questionCount: { fontSize: "1rem", marginBottom: "5px" },
+    questionText: { fontSize: "1.2rem" },
+    answerSection: { display: "flex", flexDirection: "column", gap: "10px" },
+    answerButton: { padding: "10px", borderRadius: "5px", border: "none", backgroundColor: "#4CAF50", color: "#fff" },
+    scoreSection: { fontSize: "1.2rem" },
 };
 
 export default Bioteknologi;
