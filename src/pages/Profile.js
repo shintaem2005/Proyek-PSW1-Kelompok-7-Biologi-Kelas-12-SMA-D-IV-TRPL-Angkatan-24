@@ -59,11 +59,11 @@ const Profile = () => {
               <img src="" alt="Nahesson" className="img-fluid rounded" />
               </div>
               <em>
-              Nama : <br />
-              NIM : <br />
+              Nama :Nahesson Sugos Nainggolan<br />
+              NIM : 41424006<br />
               Prodi : Sarjana Terapan Teknologi Rekayasa Perangkat Lunak <br />
-              Tempat/Tanggal Lahir : <br />
-              Instagram : <br />
+              Tempat/Tanggal Lahir : Pematangsiantar/05-01-2007<br />
+              Instagram : @nessongl<br />
               </em>
             </li> <br />
 
