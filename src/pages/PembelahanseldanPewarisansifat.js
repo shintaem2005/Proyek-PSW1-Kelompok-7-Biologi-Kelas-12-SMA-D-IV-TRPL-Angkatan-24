@@ -6,7 +6,7 @@ const PembelahanseldanPewarisansifat = () => {
   const toggleFact = () => setShowFact(!showFact);
 
   return (
-    <div className="container" style={styles.container}>
+    <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.title}>Materi Biologi: Pewarisan Sifat & Pembelahan Sel</h1>
         <p style={styles.subtitle}>Mengenal lebih dalam tentang genetika dan biologi sel.</p>
@@ -16,51 +16,104 @@ const PembelahanseldanPewarisansifat = () => {
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>Pewarisan Sifat</h2>
         <p style={styles.paragraph}>
-          Pewarisan sifat adalah proses di mana informasi genetik diturunkan dari orangtua kepada anak. Hal ini terjadi melalui kromosom yang membawa gen yang mendasari sifat fisik dan biologi. Gen adalah unit pewarisan yang diturunkan melalui pembelahan sel.
-        </p>
-        
-        <p style={styles.paragraph}>
-          Sifat-sifat yang diwariskan bisa bersifat dominan atau resesif. Dalam pewarisan sifat, ada berbagai pola yang mempengaruhi cara sifat-sifat tersebut diwariskan, seperti pewarisan dominan, resesif, kodominan, dan intermediat.
+          Pewarisan sifat adalah proses di mana informasi genetik diturunkan dari orangtua kepada anak melalui kromosom yang membawa gen.
         </p>
 
-        <h3 style={styles.subHeading}>Pola Pewarisan Sifat</h3>
-        <ul style={styles.list}>
-          <li><strong>Pewarisan Dominan dan Resesif:</strong> Sifat dominan akan lebih sering muncul, sementara sifat resesif hanya muncul jika kedua aleli resesif hadir.</li>
-          <li><strong>Pewarisan Kodominan:</strong> Kedua aleli terekspresikan secara bersamaan. Contoh: Golongan darah AB.</li>
-          <li><strong>Pewarisan Intermediat:</strong> Fenotipe campuran antara dua aleli, seperti warna bunga merah dan putih menghasilkan bunga berwarna merah muda.</li>
-          <li><strong>Pewarisan X-Linked:</strong> Sifat yang dikendalikan oleh kromosom X, contohnya buta warna yang lebih sering terjadi pada laki-laki.</li>
-        </ul>
+        <section style={styles.section}>
+          <h2 style={styles.sectionTitle}>Apa Itu Pewarisan Sifat?</h2>
+          <p style={styles.paragraph}>
+            Pewarisan sifat adalah proses di mana informasi genetik diturunkan dari orangtua kepada anak. 
+            Sifat tubuh, seperti warna mata, golongan darah, dan banyak lagi, dikendalikan oleh gen yang ada pada kromosom.
+            Pewarisan sifat dapat mengikuti pola tertentu yang telah dipelajari dalam genetika.
+            Ada beberapa jenis pola pewarisan sifat yang umum ditemukan, di antaranya adalah pewarisan dominan dan resesif, kodominan, dan intermediat.
+          </p>
+        </section>
+
+        <section style={styles.section}>
+          <h2 style={styles.sectionTitle}>Pola Pewarisan Sifat</h2>
+          <h3 style={styles.subHeading}>1. Pewarisan Dominan dan Resesif</h3>
+          <p style={styles.paragraph}>
+            Pada pewarisan dominan dan resesif, alel dominan akan selalu terekspresikan meskipun hanya satu alel dominan yang ada. 
+            Sedangkan sifat resesif hanya akan muncul jika kedua alel yang ada adalah resesif.
+          </p>
+          <ul style={styles.list}>
+            <li><strong>Alel Dominan (A):</strong> Menentukan sifat yang dominan, misalnya warna mata coklat.</li>
+            <li><strong>Alel Resesif (a):</strong> Menentukan sifat yang resesif, misalnya warna mata biru.</li>
+          </ul>
+
+          <h3 style={styles.subHeading}>2. Pewarisan Kodominan</h3>
+          <p style={styles.paragraph}>
+            Pada pewarisan kodominan, kedua alel yang berbeda akan terekspresikan secara bersamaan, tanpa ada yang dominan.
+          </p>
+          <ul style={styles.list}>
+            <li><strong>Contoh:</strong> Golongan darah AB yang dihasilkan dari kombinasi alel A dan alel B.</li>
+          </ul>
+
+          <h3 style={styles.subHeading}>3. Pewarisan Intermediat</h3>
+          <p style={styles.paragraph}>
+            Pada pewarisan intermediat, fenotipe anak merupakan campuran dari kedua alel yang diwariskan.
+          </p>
+          <ul style={styles.list}>
+            <li><strong>Contoh:</strong> Warna bunga merah muda yang dihasilkan dari pencampuran warna merah dan putih.</li>
+          </ul>
+        </section>
 
         <img 
-          src="https://3.bp.blogspot.com/-hpgsxUUQDWk/WMAh52akhjI…8B8PS12Xat09P1EPKhhBliEkk3ttVDpFQCLcB/s1600/1.pngp=" 
+          src="https://3.bp.blogspot.com/-hpgsxUUQDWk/WMAh52akhjI8B8PS12Xat09P1EPKhhBliEkk3ttVDpFQCLcB/s1600/1.png" 
           alt="Pewarisan Sifat" 
           style={styles.image} 
         />
-        
-        <div style={styles.factBox}>
-          <h4>Fakta Menarik tentang Pewarisan Sifat!</h4>
-          <p>
-            Tahukah kamu bahwa manusia memiliki sekitar 23 pasang kromosom, dan masing-masing kromosom tersebut membawa ribuan gen yang menentukan sifat-sifat fisik dan biologis kita?
-          </p>
-        </div>
       </section>
 
       {/* Bagian Pembelahan Sel */}
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>Pembelahan Sel</h2>
         <p style={styles.paragraph}>
-          Pembelahan sel adalah proses di mana satu sel membelah menjadi dua atau lebih sel anak. Pembelahan ini penting untuk pertumbuhan, perbaikan jaringan, dan reproduksi organisme. Ada dua jenis pembelahan sel: Mitosis dan Meiosis.
+          Pembelahan sel adalah proses yang memungkinkan sel untuk membelah menjadi dua atau lebih sel anak.
+          Pembelahan sel diperlukan untuk berbagai proses biologis seperti pertumbuhan, perbaikan jaringan, dan reproduksi.
+          Pembelahan sel terbagi menjadi dua jenis utama: mitosis dan meiosis.
         </p>
-        
+
         <h3 style={styles.subHeading}>Mitosis</h3>
         <p style={styles.paragraph}>
-          Mitosis adalah proses pembelahan sel yang menghasilkan dua sel anak yang identik dengan sel induk. Proses ini terjadi pada sel somatik dan digunakan untuk pertumbuhan dan perbaikan tubuh. Proses mitosis terdiri dari beberapa tahap: profase, metafase, anafase, dan telofase.
+          Mitosis adalah proses pembelahan sel yang menghasilkan dua sel anak yang identik secara genetik dengan sel induk. Mitosis penting untuk pertumbuhan, perbaikan, dan regenerasi sel tubuh.
         </p>
+
+        <h4 style={styles.subHeading}>Tahapan Mitosis</h4>
+        <ul style={styles.list}>
+          <li><strong>Profase:</strong> Kromosom memadat dan membran inti mulai pecah. Sentriol mulai bergerak ke kutub sel.</li>
+          <li><strong>Metafase:</strong> Kromosom berjajar di tengah sel pada papan metafase.</li>
+          <li><strong>Anafase:</strong> Kromatid terpisah dan bergerak menuju kutub sel yang berlawanan.</li>
+          <li><strong>Telofase:</strong> Membran inti terbentuk kembali, kromosom mulai mengendur.</li>
+          <li><strong>Sitokinesis:</strong> Pembelahan sitoplasma yang menghasilkan dua sel anak.</li>
+        </ul>
 
         <h3 style={styles.subHeading}>Meiosis</h3>
         <p style={styles.paragraph}>
-          Meiosis adalah pembelahan sel yang menghasilkan sel gamet (sperma dan ovum). Berbeda dengan mitosis, meiosis menghasilkan empat sel anak yang masing-masing memiliki separuh jumlah kromosom dari sel induk. Proses ini penting dalam reproduksi seksual dan memastikan bahwa jumlah kromosom tetap konstan dari satu generasi ke generasi berikutnya.
+          Meiosis menghasilkan empat sel anak dengan jumlah kromosom setengah dari sel induk. Proses ini penting dalam reproduksi seksual.
         </p>
+
+        <h4 style={styles.subHeading}>Miosis I</h4>
+        <p style={styles.paragraph}>
+          Pada Meiosis I, terjadi pembelahan reduksi, di mana kromosom homolog (kromosom dengan pasangan gen yang sama) dipisahkan. Hasilnya adalah dua sel anak yang masing-masing memiliki setengah jumlah kromosom dari sel induk.
+        </p>
+        <ul style={styles.list}>
+          <li><strong>Profase I:</strong> Kromosom memadat dan berpasangan dengan kromosom homolognya. Proses <strong>pertukaran silang (crossing over)</strong> terjadi, menciptakan variasi genetik.</li>
+          <li><strong>Metafase I:</strong> Kromosom homolog berjajar di tengah sel.</li>
+          <li><strong>Anafase I:</strong> Kromosom homolog ditarik ke kutub yang berlawanan.</li>
+          <li><strong>Telofase I:</strong> Sel membelah menjadi dua sel anak yang haploid.</li>
+        </ul>
+
+        <h4 style={styles.subHeading}>Miosis II</h4>
+        <p style={styles.paragraph}>
+          Meiosis II menyerupai Mitosis, namun terjadi pada sel haploid. Pada tahap ini, kromatid saudara dipisahkan, dan akhirnya menghasilkan empat sel haploid.
+        </p>
+        <ul style={styles.list}>
+          <li><strong>Profase II:</strong> Kromosom memadat kembali dan pembelahan dimulai di dua sel haploid.</li>
+          <li><strong>Metafase II:</strong> Kromosom berjajar di tengah sel haploid.</li>
+          <li><strong>Anafase II:</strong> Kromatid saudara ditarik ke kutub yang berlawanan.</li>
+          <li><strong>Telofase II:</strong> Sel membelah, menghasilkan empat sel anak haploid yang masing-masing memiliki satu set kromosom.</li>
+        </ul>
 
         <img 
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Stages_of_Mitosis.svg/500px-Stages_of_Mitosis.svg.png" 
@@ -69,30 +122,29 @@ const PembelahanseldanPewarisansifat = () => {
         />
       </section>
 
-      {/* Video Penjelasan Pembelahan Sel */}
-      <section style={styles.section}>
-        <h3 style={styles.sectionTitle}>Video: Proses Pembelahan Sel</h3>
-        <div style={styles.videoWrapper}>
-          <iframe
-            width="100%"
-            height="400"
-            src="https://www.youtube.com/embed/KXzK9IsLgD4"
-            title="Pembelahan Sel - Mitosis dan Meiosis"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </section>
+      <div style={{ width: "100%", height: "auto" }}>
+      <h2>Video Pembelajaran Mitosis dan Meiosis</h2>
+      <div style={{ marginTop: "20px" }}>
+        <iframe
+          width="100%"
+          height="400"
+          src="https://www.youtube.com/embed/W8BNvnGqJ-8"  // URL embed video YouTube
+          title="Pembelahan Sel - Mitosis dan Meiosis"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
 
       {/* Fakta Menarik */}
       <section style={styles.factsSection}>
-        <button className="btn btn-info" onClick={toggleFact}>
+        <button onClick={toggleFact} style={styles.button}>
           {showFact ? "Sembunyikan Fakta Menarik" : "Tampilkan Fakta Menarik"}
         </button>
         {showFact && (
           <div style={styles.factBox}>
             <p>
-              Tahukan Anda? Sel manusia memiliki sekitar 20.000 hingga 25.000 gen yang mengontrol seluruh sifat tubuh kita!
+              Tahukah Anda? Sel manusia memiliki sekitar 20.000 hingga 25.000 gen yang mengontrol seluruh sifat tubuh kita!
             </p>
           </div>
         )}
@@ -112,84 +164,87 @@ const styles = {
     margin: "0 auto",
     padding: "20px",
     fontFamily: "'Poppins', sans-serif",
-    background: "url('https://www.w3schools.com/w3images/forestbridge.jpg') no-repeat center center fixed", 
-    backgroundSize: "cover",
+    backgroundColor: "#f4f4f4",
     color: "#333",
-    minHeight: "100vh",
   },
   header: {
     textAlign: "center",
-    padding: "50px",
-    backgroundColor: "rgba(0, 105, 92, 0.8)", // semi-transparent green to blend with background
+    padding: "30px",
+    backgroundColor: "#00695c", 
     color: "white",
-    borderRadius: "12px",
-    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)",
+    borderRadius: "8px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
   },
   title: {
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     fontWeight: "700",
-    letterSpacing: "-1px",
-    marginBottom: "10px",
     color: "#f4c542",
   },
   subtitle: {
-    fontSize: "1.5rem",
+    fontSize: "1.2rem",
     fontStyle: "italic",
     color: "#e3f2fd",
   },
   section: {
-    marginTop: "50px",
-    padding: "30px",
-    backgroundColor: "rgba(255, 255, 255, 0.85)", // semi-transparent white background for sections
-    borderRadius: "12px",
-    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.1)",
-    textAlign: "center",
+    marginTop: "40px",
+    padding: "20px",
+    backgroundColor: "#ffffff",
+    borderRadius: "8px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
   },
   sectionTitle: {
-    fontSize: "2.5rem",
+    fontSize: "2rem",
     color: "#00695c",
-    marginBottom: "20px",
+    marginBottom: "15px",
+    textAlign: "left", // Ubah ke kiri
   },
   subHeading: {
-    fontSize: "1.8rem",
+    fontSize: "1.5rem",
     color: "#ff5722",
-    marginTop: "30px",
+    marginTop: "20px",
+    textAlign: "left", // Ubah ke kiri
   },
   paragraph: {
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
     lineHeight: "1.6",
     marginBottom: "20px",
   },
   list: {
-    marginTop: "10px",
-    paddingLeft: "20px",
+    textAlign: "left",
     fontSize: "1.1rem",
-    lineHeight: "1.8",
+    marginTop: "10px",
   },
   image: {
     width: "80%",
     maxWidth: "800px",
-    borderRadius: "12px",
+    borderRadius: "8px",
     marginTop: "20px",
   },
   videoWrapper: {
-    marginTop: "30px",
-    textAlign: "center",
+    marginTop: "20px",
   },
   factBox: {
     backgroundColor: "#ffeb3b",
-    padding: "20px",
-    borderRadius: "12px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    padding: "15px",
+    borderRadius: "8px",
     marginTop: "20px",
+  },
+  button: {
+    backgroundColor: "#ff5722",
+    color: "white",
+    padding: "10px 20px",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    fontSize: "1rem",
   },
   footer: {
     textAlign: "center",
-    marginTop: "50px",
-    padding: "20px",
+    padding: "10px",
     backgroundColor: "#00695c",
     color: "white",
-    borderRadius: "12px",
+    borderRadius: "8px",
+    marginTop: "30px",
   },
 };
 
