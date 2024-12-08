@@ -198,9 +198,6 @@ const styles = {
     container: {
         padding: "20px",
         fontFamily: "Arial, sans-serif",
-        backgroundImage: "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e570043b-1daf-4dbd-b3f7-edae04b144cd/di5m5bk-0b452c20-5cac-4343-a2c3-7656d54b9dd0.jpg/v1/fit/w_828,h_1352,q_70,strp/swamp__by_nezukorempadeviart07_di5m5bk-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU2OCIsInBhdGgiOiJcL2ZcL2U1NzAwNDNiLTFkYWYtNGRiZC1iM2Y3LWVkYWUwNGIxNDRjZFwvZGk1bTViay0wYjQ1MmMyMC01Y2FjLTQzNDMtYTJjMy03NjU2ZDU0YjlkZDAuanBnIiwid2lkdGgiOiI8PTk2MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gm_52HL-u5b5o0V4dzdCH8K0xc_BLvyTdE8_i6drzSk')",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
         color: "#fff",
     },
     header: { textAlign: "center", marginBottom: "20px" },
