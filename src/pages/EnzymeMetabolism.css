@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Protest+Revolution&family=Satisfy&display=swap');
+.enzyme-page {
+  min-height: 100vh; /* Pastikan halaman memenuhi tinggi layar */
+  background: linear-gradient(45deg, black, #38c272, #b2ff59, white, #b2ff59, #38c272);
+  background-size: 400% 400%; /* Ukuran gradasi yang besar untuk efek animasi */
+  animation: gradientMove 8s ease infinite; /* Animasi berjalan terus-menerus */
+  padding: 20px;
+  color: #fff; /* Teks berwarna putih agar kontras */
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.metabolism-card, .enzyme-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid transparent; /* Awal border transparan */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 15px rgba(56, 194, 114, 0.5); /* Shadow lembut */
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.metabolism-card:hover, .enzyme-card:hover {
+  transform: scale(1.05); /* Membesar saat di-hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(56, 194, 114, 0.8); /* Shadow bercahaya lebih terang */
+  border: 2px solid rgba(56, 194, 114, 0.8); /* Border glowing saat hover */
+}
+
+
+.metabolism-card::before, .enzyme-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(45deg, #38c272, #b2ff59, #38c272);
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.metabolism-card:hover::before, .enzyme-card:hover::before {
+  opacity: 1; /* Border gradasi muncul saat hover */
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #56ab2f;
+}
+
+.card-text, ul {
+  font-size: 1.2rem;
+  color: #2f5233;
+}
+
+.hidden-text {
+  display: none;
+  font-size: 1rem;
+  color: #2f5233;
+  margin-top: 15px;
+  transition: opacity 0.3s;
+}
+.enzyme-card:hover .hidden-text {
+  display: block; /* Menampilkan teks tersembunyi saat di-hover */
+  opacity: 1;
+}
+
+.metabolism-card:hover .hidden-text {
+  display: block; /* Menampilkan penjelasan saat card di-hover */
+}
+
+.title {
+  font-size: 3rem;
+  color: #2f5233;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #f4f9f4;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,80 @@
+.mutasi-background{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRerxlcjM8T5Qd9PIJsPg39D7HR69tce0oyJQ&s');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.animated-header1 {
+  background: url('https://akcdn.detik.net.id/visual/2023/03/17/ilustrasi-mutasi-gen_169.jpeg?w=650') no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(235, 135, 244);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.animated-footer1 {
+  background: url('https://akcdn.detik.net.id/visual/2023/03/17/ilustrasi-mutasi-gen_169.jpeg?w=650') no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(235, 135, 244);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.h2feature {
+  text-align: center;
+  margin: 10px;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bgsec {
+  background-color: beige;
+}
+
+.bgsec1 {
+  background-color: beige;
+}
+
+.divslide {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.prevslide {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 9px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.imgslide {
+  width: 50%;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.nextslide {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 9px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.paragraph {
+  text-align: justify;
+}
