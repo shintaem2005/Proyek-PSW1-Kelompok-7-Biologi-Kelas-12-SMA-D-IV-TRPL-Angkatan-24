@@ -38,18 +38,6 @@ const Homepage = () => {
     
       <section className="row align-items-center mt-4 bg-white p-4 shadow-sm rounded">
 
-      <div className="col-md-3">
-        <div className="card-container">
-            <img class="card-img-top" src="https://cdn.prod.website-files.com/62041b52ed8a5756a8361408/650b76b2a66ebc491e52d45f_abundance-2.jpg" alt="Card Enzim dan Metabolisme" />
-            <div class="card-content">
-              <h5 class="card-title">Pertumbuhan dan Perkembangan</h5>
-              <p class="card-text"></p>
-              <button className="btn"><a href="./pertumbuhandanperkembangan" className="btn">Go To Page</a>
-              </button>
-            </div>
-        </div>
-        </div>
-
         <div className="col-md-3">
         <div className="card-container">
             <img class="card-img-top" src="https://bpsbioscience.com/media/wysiwyg/Landing_Pages/Metabolism_Diagram.png" alt="Card Enzim dan Metabolisme" />
