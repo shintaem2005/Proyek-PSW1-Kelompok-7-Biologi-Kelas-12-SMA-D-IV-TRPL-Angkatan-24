@@ -5,7 +5,6 @@ import Navbar from './components/Navbar.js';
 import RegistrationForm from './pages/RegistrationForm.js';
 import LoginForm from './pages/LoginForm.js';
 import Homepage from './pages/Homepage.js';
-import PertumbuhandanPerkembangan from './pages/PertumbuhandanPerkembangan.js';
 import EnzymeMetabolism from './pages/EnzymeMetabolism.js';
 import ReproduksiSel from './pages/ReproduksiSel.js';
 import SubstansiMateriGenetika from './pages/SubstansiMateriGenetika.js';
@@ -15,7 +14,6 @@ import Mutasi from './pages/Mutasi.js';
 import Evolusi from './pages/Evolusi.js';
 import Bioteknologi from './pages/Bioteknologi.js';
 import Profile from './pages/Profile.js';
-// import References from './pages/References.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
@@ -33,10 +31,6 @@ function App() {
           <Route path='/home' element={<Homepage />} />
 
           <Route path='/profile' element ={<Profile />} />
-
-          {/* <Route path='/references' element ={<References />} /> */}
-
-          <Route path='/pertumbuhandanperkembangan' element ={<PertumbuhandanPerkembangan />} />
 
           <Route path='/enzymemetabolism' element ={<EnzymeMetabolism />} />
 
